@@ -28,13 +28,18 @@
     }
 }
 
-.editorial {
+.wave {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     display: block;
     width: 100%;
     height: 14em;
     margin: 0;
+}
+
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -45,20 +50,65 @@ body {
 
 * {
     font-family: 'Montserrat', sans-serif;
-    text-rendering: optimizeLegibility
+    text-rendering: geometricPrecision;
+    box-sizing: border-box;
 }
 
-.coming-soon {
-    text-align: center;
-    color: #edeff7;
+section {
+    display: flex;
+    padding: 0 10%;
 }
 
-.coming-soon h1 {
-    font-size: 3.8rem;
+section > div {
+    width: 50%;
+}
+.left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.left img {
+    width: 70%
+}
+.right {
+    color: white;
+    padding-left: 6%
+}
+.right > * {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.right h1 {
+    font-size: 4rem
+}
+
+.right h3 {
+    font-size: 1.5rem
+}
+
+.right p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px
+}
+
+.pink {
+    color: #dd2c68;
+}
+
+.underline {
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+    border-bottom: 6px solid white;
 }
 
 .humber-logo {
-    width: 80px
+    display: inline;
+    width: 4rem
 }
 
 /*prevent many large-by-comparison ripples by shrinking the height*/
