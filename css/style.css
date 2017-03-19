@@ -100,11 +100,19 @@ section>div {
     line-height: 2.8rem;
 }
 
-.right h3 {
+.right h3,
+.right h4 {
     font-size: 1.3rem;
-    font-weight: 500;
     line-height: 1.7rem;
-    padding: 8px 0;
+    padding: 3px 0;
+}
+
+.right h3 {
+    font-weight: 500;
+}
+
+.right h4 {
+    font-weight: 400;
 }
 
 .right p {
@@ -121,6 +129,12 @@ section>div {
     padding-bottom: 6px;
     margin-bottom: 16px;
     border-bottom: 4px solid white;
+}
+
+.underline-small {
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid white;
 }
 
 .humber-logo {
