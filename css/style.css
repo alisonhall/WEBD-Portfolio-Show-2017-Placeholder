@@ -180,4 +180,19 @@ section>div {
     section {
         padding: 10%;
     }
+    .left {
+        min-height: 280px;
+    }
+    .left img {
+        width: 100%;
+    }
+    .right h1 {
+        font-size: 2rem;
+    }
+    .right>h2 {
+        padding: 10px 0 0 0;
+    }
+    .right>* {
+        padding: 0;
+    }
 }
