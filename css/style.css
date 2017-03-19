@@ -1,19 +1,19 @@
-.parallax > use {
+.parallax>use {
     animation: move-forever 12s linear infinite;
     backface-visibility: hidden;
     perspective: 1000;
 }
 
-.parallax > use:nth-child(1) {
+.parallax>use:nth-child(1) {
     animation-delay: -2s;
 }
 
-.parallax > use:nth-child(2) {
+.parallax>use:nth-child(2) {
     animation-delay: -2s;
     animation-duration: 5s;
 }
 
-.parallax > use:nth-child(3) {
+.parallax>use:nth-child(3) {
     animation-delay: -4s;
     animation-duration: 7s;
 }
@@ -22,7 +22,6 @@
     0% {
         transform: translate3d(-90px, 0, 0);
     }
-    
     100% {
         transform: translate3d(85px, 0, 0);
     }
@@ -37,7 +36,6 @@
     margin: 0;
 }
 
-
 html {
     font-size: 16px;
 }
@@ -45,7 +43,6 @@ html {
 body {
     background-color: #1e2756;
     margin: 0;
-    padding: 9em 0 0 0;
 }
 
 * {
@@ -56,25 +53,31 @@ body {
 
 section {
     display: flex;
-    padding: 0 10%;
+    padding: 10%;
+    position: relative;
+    z-index: 9999;
 }
 
-section > div {
+section>div {
     width: 50%;
 }
+
 .left {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
+
 .left img {
     width: 70%
 }
+
 .right {
     color: white;
     padding-left: 6%
 }
-.right > * {
+
+.right>* {
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -111,6 +114,7 @@ section > div {
     width: 4rem
 }
 
+
 /*prevent many large-by-comparison ripples by shrinking the height*/
 
 @media (max-width: 50em) {
@@ -119,5 +123,28 @@ section > div {
     }
     .editorial {
         height: 17vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wave {
+        position: fixed;
+    }
+    body {
+        padding: 0;
+    }
+    section>div {
+        width: 100%;
+    }
+    .right h3 {
+        line-height: 48px;
+    }
+    .left img {
+        width: 85%;
+        padding: 10% 0;
+    }
+    section {
+        display: inline-block;
+        padding: 4%;
     }
 }
