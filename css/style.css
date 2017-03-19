@@ -43,6 +43,7 @@ html {
 body {
     background-color: #1e2756;
     margin: 0;
+    width: 100%;
 }
 
 * {
@@ -52,8 +53,8 @@ body {
 }
 
 section {
+    width: 100%;
     display: flex;
-    padding: 10%;
     position: relative;
     z-index: 9999;
 }
@@ -64,17 +65,21 @@ section>div {
 
 .left {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
+    min-height: 100vh;
+
 }
 
 .left img {
-    width: 70%
+    width: 70%;
 }
 
 .right {
     color: white;
-    padding-left: 6%
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right>* {
@@ -86,17 +91,26 @@ section>div {
 }
 
 .right h1 {
-    font-size: 4rem
+    font-size: 4rem;
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
 }
 
 .right h3 {
-    font-size: 1.5rem
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    padding: 8px 0;
 }
 
 .right p {
     font-size: 1.2rem;
     font-weight: 300;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 .pink {
@@ -106,12 +120,12 @@ section>div {
 .underline {
     padding-bottom: 6px;
     margin-bottom: 16px;
-    border-bottom: 6px solid white;
+    border-bottom: 4px solid white;
 }
 
 .humber-logo {
     display: inline;
-    width: 4rem
+    width: 4rem;
 }
 
 
@@ -120,9 +134,6 @@ section>div {
 @media (max-width: 50em) {
     .content h1 {
         font-size: 12vmax;
-    }
-    .editorial {
-        height: 17vw;
     }
 }
 
@@ -136,15 +147,23 @@ section>div {
     section>div {
         width: 100%;
     }
-    .right h3 {
-        line-height: 48px;
+    .left {
+        padding: 0;
+        min-height: 230px;
+        justify-content: flex-start;
     }
-    .left img {
-        width: 85%;
-        padding: 10% 0;
+    .right {
+        margin-top: 0;
+        padding: 0;
     }
     section {
         display: inline-block;
-        padding: 4%;
+        padding: 4% 21%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section {
+        padding: 10%;
     }
 }
