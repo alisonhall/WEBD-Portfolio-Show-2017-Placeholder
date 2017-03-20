@@ -1,21 +1,21 @@
 .parallax>use {
-    animation: move-forever 12s linear infinite;
+    animation: move-forever 36s linear infinite;
     backface-visibility: hidden;
     perspective: 1000;
 }
 
 .parallax>use:nth-child(1) {
-    animation-delay: -2s;
+    animation-delay: -6s;
 }
 
 .parallax>use:nth-child(2) {
-    animation-delay: -2s;
-    animation-duration: 5s;
+    animation-delay: -6s;
+    animation-duration: 15s;
 }
 
 .parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 7s;
+    animation-delay: -12s;
+    animation-duration: 21s;
 }
 
 @keyframes move-forever {
@@ -122,19 +122,13 @@ section>div {
 }
 
 .pink {
-    color: #dd2c68;
+    color: #DB3069;
 }
 
 .underline {
     padding-bottom: 6px;
     margin-bottom: 16px;
     border-bottom: 4px solid white;
-}
-
-.underline-small {
-    padding-bottom: 4px;
-    margin-bottom: 16px;
-    border-bottom: 2px solid white;
 }
 
 .humber-logo {
@@ -154,7 +148,7 @@ section>div {
 @media screen and (max-width: 900px) {
     .wave {
         width: 200%;
-        height: 10em
+        height: 10em;
     }
     body {
         padding: 0;
