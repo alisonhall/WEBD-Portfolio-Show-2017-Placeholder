@@ -28,7 +28,7 @@
 }
 
 .wave {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     display: block;
     width: 100%;
@@ -153,7 +153,8 @@ section>div {
 
 @media screen and (max-width: 900px) {
     .wave {
-        position: fixed;
+        width: 200%;
+        height: 10em
     }
     body {
         padding: 0;
